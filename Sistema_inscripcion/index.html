@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <nav>
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" id="Datpersonales">Datos personales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="ccióndemateria">Selección de materia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Confirmación</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <!-- Sección de Datos Personales -->
+                <div id="Seccionde-datos-personales">
+
+                    <div class="row justify-content-center bg-dark text-white mb-4">
+                        <h3 id="datos-personales-title" class="text-center">Datos personales</h3>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                        <div class="col-sm-6">
+                            <input type="text" id="inputNombre" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <label for="provincia" class="col-sm-2 col-form-label">Provincia</label>
+                        <div class="col-sm-6">
+                            <input type="text" id="inputProvincia" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <label for="ciudad" class="col-sm-2 col-form-label">Ciudad</label>
+                        <div class="col-sm-6">
+                            <input type="text" id="inputCiudad" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <label for="sector" class="col-sm-2 col-form-label">Sector</label>
+                        <div class="col-sm-6">
+                            <input type="text" id="inputSector" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <label for="calle" class="col-sm-2 col-form-label">Calle</label>
+                        <div class="col-sm-6">
+                            <input type="text" id="inputCalle" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <label for="selection" class="col-sm-2 col-form-label">Selecciona una opción:</label>
+                        <div class="col-sm-6">
+                            <select id="selection" name="selection" class="form-control">
+                                <option value="opcion0">-- Elija una carrera</option>
+                                <option value="software">Software</option>
+                                <option value="multimedia">Multimedia</option>
+                                <option value="redes">Redes</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="container mt-4">
+                        <div class="contenedor d-flex justify-content-end align-items-end">
+                            <button id="btnLimpiar" class="btn btn-secondary mr-3">Limpiar</button>
+                            <button id="btnRegistrar" class="btn btn-warning">Registrar</button>
+                        </div>
+                    </div>
+                </div>
+
+              <!-- Version para sotfware   Version para sotfware   Version para sotfware   Version para sotfware -->
+                <div class="container mt-4" id="Seccionde-seleccion-software" style="display: none;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <div id="headerSeleccionMaterias" class="col text-center bg-primary text-white">
+                                    <h3 id="tituloSeleccionMaterias">Selección de materias</h3>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center mt-3">
+                                <label for="materia1" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia1" name="materia1" class="form-control">
+                                        <option value="opcion0" >-- Elija una materia</option>
+                                        <option value="opcion1" name="Programación 2">Programación 2</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones1" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo1Opcion1" name="grupo1" value="opcion1"> Lu
+                                                18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo1Opcion2" name="grupo1" value="opcion2"> Ma
+                                                10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo1Opcion3" name="grupo1" value="opcion3"> Mi
+                                                13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center">
+                                <label for="materia2" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia2" name="materia2" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1" name="Base de datos avanzada">Base de datos avanzada</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones2" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo2Opcion1" name="grupo2" value="opcion1"> Lu
+                                                18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo2Opcion2" name="grupo2" value="opcion2"> Ma
+                                                10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo2Opcion3" name="grupo2" value="opcion3"> Mi
+                                                13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center">
+                                <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia3" name="materia3" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1" name=">Desarrollo Web">Desarrollo Web</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones3" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion1" name="grupo3" value="opcion1"> Lu
+                                                18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion2" name="grupo3" value="opcion2"> Ma
+                                                10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion3" name="grupo3" value="opcion3"> Mi
+                                                13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center">
+                                <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia4" name="materia4" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1" name=">Pragrmacion 3">Pragrmacion 3</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones3" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion1" name="grupo4" value="opcion1"> Lu
+                                                18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion2" name="grupo4" value="opcion2"> Ma
+                                                10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion3" name="grupo4" value="opcion3"> Mi
+                                                13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center">
+                                <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia5" name="materia5" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1" name=">Fundamentos del computador">Fundamentos del computador</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones3" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo5555pcion1" name="grupo5" value="opcion1"> Lu
+                                                18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo5555pcion2" name="grupo5" value="opcion2"> Ma
+                                                10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo5555pcion3" name="grupo5" value="opcion3"> Mi
+                                                13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center">
+                                <div class="col-sm-8 d-flex justify-content-end">
+                                    <button id="btnAceptar" class="btn btn-primary">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- versionb para rede          versionb para rede        versionb para rede           versionb para rede       -->
+                <div class="container mt-4" id="Seccionde-seleccion-redes" style="display: none;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <div id="headerSeleccionMaterias" class="col text-center bg-primary text-white">
+                                    <h3 id="tituloSeleccionMaterias">Selección de materias - Redes</h3>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row justify-content-center mt-3">
+                                <label for="materia1" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia11" name="materia11" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1"  name=">Fundamentos de Redes">Fundamentos de Redes</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones1" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo1Opcion1" name="grupo1" value="opcion1"> Lu 18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo1Opcion2" name="grupo1" value="opcion2"> Ma 10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo1Opcion3" name="grupo1" value="opcion3"> Mi 13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row justify-content-center">
+                                <label for="materia2" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia22" name="materia22" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1">Administración de Redes</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones2" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo2Opcion1" name="grupo2" value="opcion1"> Lu 18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo2Opcion2" name="grupo2" value="opcion2"> Ma 10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo2Opcion3" name="grupo2" value="opcion3"> Mi 13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row justify-content-center">
+                                <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia33" name="materia33" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1">Seguridad en Redes</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones3" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion1" name="grupo3" value="opcion1"> Lu 18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion2" name="grupo3" value="opcion2"> Ma 10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo3Opcion3" name="grupo3" value="opcion3"> Mi 13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center">
+                                <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia44" name="materia44" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1">Seguridad en Redes</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones3" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo44Opcion1" name="grupo4" value="opcion1"> Lu 18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo44Opcion2" name="grupo4" value="opcion2"> Ma 10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo44Opcion3" name="grupo4" value="opcion3"> Mi 13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="form-group row justify-content-center">
+                                <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                                <div class="col-sm-6">
+                                    <select id="materia55" name="materia55" class="form-control">
+                                        <option value="opcion0">-- Elija una materia</option>
+                                        <option value="opcion1">Distema Operactivo</option>
+                                    </select>
+                                    <form>
+                                        <div id="grupoOpciones3" class="opciones form-control"
+                                            style="display: flex; gap: 40px; justify-content: center;">
+                                            <label>
+                                                <input type="radio" id="grupo55Opcion1" name="grupo5" value="opcion1"> Lu 18:00 a 20:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo55Opcion2" name="grupo5" value="opcion2"> Ma 10:00 a 14:00
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="grupo55Opcion3" name="grupo5" value="opcion3"> Mi 13:00 a 17:00
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row justify-content-center">
+                                <div class="col-sm-8 d-flex justify-content-end">
+                                    <button id="btnAceptar2" class="btn btn-primary">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+             <!--Version para multimedia     Version para multimedia      Version para multimedia       Version para multimedia       Version para multimedia  -->
+             <div class="container mt-4" id="Seccionde-seleccion-multimedia" style="display: none;">
+                <div class="row">
+                    <div class="col">
+                        <div class="row justify-content-center">
+                            <div id="headerSeleccionMaterias" class="col text-center bg-primary text-white">
+                                <h3 id="tituloSeleccionMaterias">Selección de materias - Multimedia</h3>
+                            </div>
+                        </div>
+            
+                        <div class="form-group row justify-content-center mt-3">
+                            <label for="materia1" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                            <div class="col-sm-6">
+                                <select id="materia111" name="materia1" class="form-control">
+                                    <option value="opcion0">-- Elija una materia</option>
+                                    <option value="opcion1">Edición de Video</option>
+                                </select>
+                                <form>
+                                    <div id="grupoOpciones1" class="opciones form-control"
+                                        style="display: flex; gap: 40px; justify-content: center;">
+                                        <label>
+                                            <input type="radio" id="grupo1Opcion1" name="grupo1" value="opcion1"> Lu 18:00 a 20:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo1Opcion2" name="grupo1" value="opcion2"> Ma 10:00 a 14:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo1Opcion3" name="grupo1" value="opcion3"> Mi 13:00 a 17:00
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            
+                        <div class="form-group row justify-content-center">
+                            <label for="materia2" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                            <div class="col-sm-6">
+                                <select id="materia222" name="materia2" class="form-control">
+                                    <option value="opcion0">-- Elija una materia</option>
+                                    <option value="opcion1">Diseño Gráfico</option>
+                                </select>
+                                <form>
+                                    <div id="grupoOpciones2" class="opciones form-control"
+                                        style="display: flex; gap: 40px; justify-content: center;">
+                                        <label>
+                                            <input type="radio" id="grupo2Opcion1" name="grupo2" value="opcion1"> Lu 18:00 a 20:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo2Opcion2" name="grupo2" value="opcion2"> Ma 10:00 a 14:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo2Opcion3" name="grupo2" value="opcion3"> Mi 13:00 a 17:00
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            
+                        <div class="form-group row justify-content-center">
+                            <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                            <div class="col-sm-6">
+                                <select id="materia333" name="materia3" class="form-control">
+                                    <option value="opcion0">-- Elija una materia</option>
+                                    <option value="opcion1">Animación 3D</option>
+                                </select>
+                                <form>
+                                    <div id="grupoOpciones3" class="opciones form-control"
+                                        style="display: flex; gap: 40px; justify-content: center;">
+                                        <label>
+                                            <input type="radio" id="grupo3Opcion1" name="grupo3" value="opcion1"> Lu 18:00 a 20:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo3Opcion2" name="grupo3" value="opcion2"> Ma 10:00 a 14:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo3Opcion3" name="grupo3" value="opcion3"> Mi 13:00 a 17:00
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-center">
+                            <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                            <div class="col-sm-6">
+                                <select id="materia444" name="materia4" class="form-control">
+                                    <option value="opcion0">-- Elija una materia</option>
+                                    <option value="opcion1">Animación 2D</option>
+                                </select>
+                                <form>
+                                    <div id="grupoOpciones3" class="opciones form-control"
+                                        style="display: flex; gap: 40px; justify-content: center;">
+                                        <label>
+                                            <input type="radio" id="grupo4Opcion1" name="grupo4" value="opcion1"> Lu 18:00 a 20:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo4Opcion2" name="grupo4" value="opcion2"> Ma 10:00 a 14:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo4Opcion3" name="grupo4" value="opcion3"> Mi 13:00 a 17:00
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-center">
+                            <label for="materia3" class="col-sm-2 col-form-label">Selecciona una materia:</label>
+                            <div class="col-sm-6">
+                                <select id="materia555" name="materia5" class="form-control">
+                                    <option value="opcion0">-- Elija una materia</option>
+                                    <option value="opcion1">Dibujo</option>
+                                </select>
+                                <form>
+                                    <div id="grupoOpciones3" class="opciones form-control"
+                                        style="display: flex; gap: 40px; justify-content: center;">
+                                        <label>
+                                            <input type="radio" id="grupo5Opcion1" name="grupo5" value="opcion1"> Lu 18:00 a 20:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo5Opcion2" name="grupo5" value="opcion2"> Ma 10:00 a 14:00
+                                        </label>
+                                        <label>
+                                            <input type="radio" id="grupo5Opcion3" name="grupo5" value="opcion3"> Mi 13:00 a 17:00
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            
+                        <div class="form-group row justify-content-center">
+                            <div class="col-sm-8 d-flex justify-content-end">
+                                <button id="btnAceptar3" class="btn btn-primary">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+                <div id="datos-confirmacion" class="row mt-3 " style="display: none">
+                    <div class="col">
+                        <div class="row justify-content-center"
+                            style="background-color: green; color: white; margin-bottom: 1rem;">
+                            <h3 id="datos-personales-title" class="text-center">Confirmacion</h3>
+                        </div>
+                        <div class="row d-flex justify-content-center mb-4">
+
+                            <table border="1" cellpadding="8" cellspacing="0">
+                                <thead>
+                                    <tr style="background-color: rgb(0, 102, 255); color: white; margin-bottom: 1rem;">
+                                        <th colspan="2">Datos Básicos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Nombre</strong></td>
+                                        <td id="nombre"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Provincia</strong></td>
+                                        <td id="provincia"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Ciudad</strong></td>
+                                        <td id="ciudad"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sector</strong></td>
+                                        <td id="sector"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Calle</strong></td>
+                                        <td id="calle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Carrera</strong></td>
+                                        <td id="carrera"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row d-flex justify-content-center">
+                            <table class="table table-bordered text-center" id="tabla-asignaturas"
+                            style="background-color: black; color: white;">
+                            <thead>
+                                <tr>
+                                    <th id="th-asignatura"><strong>Asignatura</strong></th>
+                                    <th id="th-lu"><strong>Lu</strong></th>
+                                    <th id="th-mar"><strong>Mar</strong></th>
+                                    <th id="th-mie"><strong>Mié</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="fila-materia-1">
+                                    <td id="materia-1">Materia 1</td>
+                                    <td id="materia-1-opcion1"></td>
+                                    <td id="materia-1-opcion2"></td>
+                                    <td id="materia-1-opcion3"></td>
+                                </tr>
+                                <tr id="fila-materia-2">
+                                    <td id="materia-2">Materia 2</td>
+                                    <td id="materia-2-opcion1"></td>
+                                    <td id="materia-2-opcion2"></td>
+                                    <td id="materia-2-opcion3"></td>
+                                </tr>
+                                <tr id="fila-materia-3">
+                                    <td id="materia-3">Materia 3</td>
+                                    <td id="materia-3-opcion1"></td>
+                                    <td id="materia-3-opcion2"></td>
+                                    <td id="materia-3-opcion3"></td>
+                                </tr>
+                                <tr id="fila-materia-4">
+                                    <td id="materia-4">Materia 4</td>
+                                    <td id="materia-4-opcion1"></td>
+                                    <td id="materia-4-opcion2"></td>
+                                    <td id="materia-4-opcion3"></td>
+                                </tr>
+                                <tr id="fila-materia-5">
+                                    <td id="materia-5">Materia 5</td>
+                                    <td id="materia-5-opcion1"></td>
+                                    <td id="materia-5-opcion2"></td>
+                                    <td id="materia-5-opcion3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        </div>
+
+                        <div class="form-group row justify-content-center">
+                            <div class="col-sm-8 d-flex justify-content-end">
+                                <button id="Finalizar" class="btn"
+                                    style="background-color: green; color: white; margin-bottom: 1rem;">Finalizar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- fiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiinnnnnnnnnnnnnnnn-->
+
+
+                </div>
+            </div>
+</body>
+
+</html>

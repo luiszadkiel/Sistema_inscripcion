@@ -1,0 +1,9 @@
+#tabla-asignaturas {
+    background-color: black; 
+    color: white;
+}
+
+#tabla-asignaturas th, 
+#tabla-asignaturas td {
+    border: 1px solid white; 
+}
